@@ -1,47 +1,34 @@
-import React, { useRef } from 'react'
-import image1 from '../assets/image1.JPG'
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-
-
+import React from 'react';
+import image1 from '../assets/image10.JPG';
 
 const DynamicPage = () => {
-  
-const name = useRef()
-  
-const t1=gsap.timeline()
-
-  useGSAP(()=>{
-    t1.from(name.current.querySelectorAll('h1,h2,p,img'),{
-      y: -30,
-      duration: 0.5,
-      delay:0.2,
-      opacity:0,
-      stagger: 0.5,
-      ease: 'power1.in'
-    })
- })
-   
   return (
     <>
-    <section>
-    <div ref={name} className='Heading flex flex-col md:flex-row'>
-        <div  className='content text-center px-5 space-y-4'>
-      <h1 className='mt-8 text-8xl font-bold bg-image-fill'>Save
-        <br></br>
-         <span className='text-[#9A1D20]'>Chure</span></h1>
-      <h2 className=" text-3xl outline-text">Movements for land rights</h2>
-      <p className="text-lg font-light text-justify">
-            A group of residents, driven by the shared challenge of water scarcity caused by over-extraction of riverbed materials, illegal mining, wetland destruction, river encroachment, concretization, and deforestation, embarked on a remarkable 25-day journey to Kathmandu. They are currently protesting at Maitighar Mandala, highlighting the severe disruption of the natural water supply and the resulting hardships.
-          </p>
-      </div>
-
-       <img  src={image1} alt='Heading Image' className='h-full w-2/4 mt-8 border rounded-3xl'/>
-
-    </div>
-    </section>
+      <section>
+        <div className="flex relative mt-5 h-[500px] w-full">
+          {/* Background Image */}
+          <img src={image1} className="w-full h-full object-cover" alt="Background" />
+          {/* Gradient Overlay */}
+          <div className="absolute h-full w-full bg-gradient-to-r from-black/90 to-black/20"></div>
+          
+          {/* Content Overlay */}
+          <div className="absolute ml-16 mt-32 space-y-5">
+            <h1 className="text-6xl text-[#F5F5DC] font-bold">Save Chure</h1>
+              <div>
+            <span className="font-serif bg-[#9a1d20] text-[#EDEADE] px-3 py-1 text-2xl">
+              Movements for Land Rights
+            </span>
+            </div>
+            <p className="text-[#EDEADE] text-base font-thin heading_paragraph opacity-70">
+              "United by the fight against water scarcity and ecological 
+              <br />
+              devastation, residents march to Kathmandu"
+            </p>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default DynamicPage
+export default DynamicPage;
