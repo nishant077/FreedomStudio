@@ -7,23 +7,27 @@ import Utube from './components/Utube'
 import Section2 from './components/Section2'
 import Section3 from './components/Section3'
 import Marquee from './components/Marquee'
+import Gallerytext from './components/Gallerytext'
+import PopupItem from './components/PopupItem'
 
 
 function App() {
 
   return (
     <>
-      <NavigationBar />
-      <DynamicPage />
-       <Section2/>
-       <div className="-mt-36  mx-auto w-full h-screen text-white flex justify-center items-center overflow-x-hidden bg-black">
-      <Marquee />
-    </div>
-       <Section3/>
+        <NavigationBar />  
+       <DynamicPage />
+        <Section2/>
+       <Gallerytext/>
+      <div className="  mx-auto w-full md:h-screen h-[70vh] text-white flex justify-center items-center overflow-x-hidden bg-black">
+      <Marquee /> 
+       </div>  
+      <Section3/>
        
-       <Utube/>
-       <Footer/>
-     
+         <Utube/>
+      <Footer/>  
+      {/* <PopupItem/>
+      */}
     </>
   )
 }

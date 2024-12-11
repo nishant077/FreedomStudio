@@ -12,7 +12,7 @@ const MarqueeItem = ({ images, from, to }) => {
       >
         {images.map((image, index) => (
           <img
-            className="h-60 w-80 pr-4" // Adjust height, width, and spacing as needed
+            className="md:h-60 md:w-80 h-48 w-48 object-cover rounded-lg pr-4" // Adjust height, width, and spacing as needed
             src={image}
             alt={`Marquee Image ${index + 1}`} // Added alt for accessibility
             key={index}
@@ -28,7 +28,7 @@ const MarqueeItem = ({ images, from, to }) => {
       >
         {images.map((image, index) => (
           <img
-            className="h-60 w-80 pr-4" // Same adjustments for the second row
+            className="md:h-60 md:w-80 h-48 w-48 object-cover rounded-lg pr-4" // Same adjustments for the second row
             src={image}
             alt={`Marquee Image ${index + 1}`} // Added alt for accessibility
             key={`${index}-clone`} // Unique key for duplicate set

@@ -6,19 +6,19 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Section3 = () => {
   return (
     <>
-      <div className="bg-[#f7f9f9] min-h-[400px] mt-12">
-        <div className="flex justify-evenly gap-12">
+      <div className="bg-[#f7f9f9] min-h-[400px] mt-12 flex-wrap p-3">
+        <div className="md:flex md:justify-evenly  md:gap-12 ">
           <img
             src={image13}
-            className="h-52 w-52 ml-28 mt-7 object-cover rounded-lg"
+            className="md:h-60 h-54 md:w-60 w-72 ml-10 md:ml-28 mt-7 object-cover rounded-lg"
           />
           <div className="space-y-4">
-            <h1 className="font-bold text-3xl text-justify mt-20 tracking-tighter">
-              Protest the critical state of water resources
+            <h1 className="font-bold md:text-3xl text-xl text-justify mt-20 md:tracking-tighter">
+            Chure Conservation <span className='text-[#9a1d20]'>Movement</span>
             </h1>
 
-            <p className="text-pretty antialiased font-sans opacity-70">
-              Through their determined actions, the residents are advocating for the protection and restoration of vital water systems. Their protest not only highlights the critical state of water resources but also serves as a reminder of the interconnectedness of environmental stewardship and human well-being.
+            <p className="text-pretty antialiased font-sans opacity-70 text-justify m-2">
+            This movement has emerged in response to severe water scarcity caused by environmental degradation, including illegal mining and deforestation. The demands of the movement include the immediate cessation of illegal excavation and the extraction of riverbed materials like stones, gravel, and sand, along with the closure of crusher industries in the Chure region. They call for banning open grazing, declaring Madhesh Province a drought-affected area, and making the Presidential Chure Conservation Development Committee independent. The protesters also demand the enactment of a separate Chure Act for effective conservation, the return of misused forest land to its original state, and proper land arrangements for genuine Dalits, landless individuals, and squatters. Additionally, they seek strict action against those involved in illegal activities in the region and warn of continued protests if their demands remain unaddressed.  
             </p>
 
             <a
@@ -34,7 +34,7 @@ const Section3 = () => {
           </div>
           <img
             src={image14}
-            className="h-52 w-52 object-cover mt-36 mr-28 rounded-lg"
+            className="h-52 w-52 object-cover mt-64 mr-28 rounded-lg lg:block hidden"
           />
         </div>
       </div>

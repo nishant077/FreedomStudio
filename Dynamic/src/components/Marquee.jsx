@@ -44,6 +44,7 @@ const Marquee = () => {
   ];
 
   return (
+   <>
     <div className="container mx-auto overflow-hidden">
      
       <MarqueeItem images={upperMarquee} from={0} to={"-100%"} />
@@ -51,6 +52,7 @@ const Marquee = () => {
       <MarqueeItem images={lowerMarquee} from={"-100%"} to={0} />
       </div>
     </div>
+    </>
   );
 };
 

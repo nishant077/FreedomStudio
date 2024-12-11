@@ -2,7 +2,7 @@ import React from 'react';
 import image1 from '../assets/Image1.JPG';
 import image2 from '../assets/image2.JPG';
 import image3 from '../assets/image3.JPG';
-import {motion} from 'framer-motion';
+
 
 const MainPage = () => {
   return (
